@@ -1,0 +1,20 @@
+body{
+    margin:0;
+    padding:0;
+    width:auto;
+    height:100vh;
+    font-family: "Roboto";
+    background-image: linear-gradient(to right top, #0da1b7, #50aad8, #8eb0eb, #c7b4f0, #f6b9e9);
+}
+#main{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+#app{
+    width:100%;
+    height:100%;
+    display: flex;
+}
