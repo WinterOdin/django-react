@@ -42,11 +42,11 @@ export default class CreateRoomPage extends Component {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        votes: this.state.votes,
+        votes_to_skip: this.state.votes,
         guest_pause: this.state.guest_pause,
       }),
     };
-    fetch("/api/create", requestOptions)
+    fetch("/api/create-room", requestOptions)
       .then((response) => response.json())
       .then((data) => console.log(data));
   }
